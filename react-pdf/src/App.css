@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  max-width: 100%;
+  margin: 10px;
+}
+
+.pdf-container{
+  max-width: calc(90%);
 }
 
 .App-logo {
@@ -35,4 +42,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.doc-selector{
+  width: 120px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.doc-selector button{
+  display: flex;
+  gap: 5px;
+  width: 100px;
+  background-color: #9ed0ff;
+  border-color: #9ed0ff;
+  color: rgb(0, 0, 0);
+  font-family: nunito;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.doc-selector button:hover{
+  color: #ffffff;
 }
